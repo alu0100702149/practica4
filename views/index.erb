@@ -1,0 +1,27 @@
+  
+<h1>Lexical Analysis</h1>
+<h2>Demonstration</h2>
+<textarea id="INPUT">
+   var a = "hello"; // initialize a
+   var b = (a <= 1)*5; /* initialize b  */
+</textarea>
+<br>
+<input id="PARSE" value=parse type=button>
+
+<input type="file" id="fichero"/>
+ <script type="text/javascript">
+    document.getElementById('fichero').addEventListener('change', CopyMe, false);
+
+    function CopyMe(evt) {
+        var file = evt.target.files[0];
+        if (file) {
+                var reader = new FileReader();
+                reader.onload = function(e) { 
+                          INPUT.innerHTML = e.target.result;
+                        }
+                var c = reader.readAsText(file);
+            }
+        else { alert("Failed to load file"); }
+    }
+  </script>
+<pre id=OUTPUT></pre>
