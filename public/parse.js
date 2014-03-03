@@ -6,7 +6,7 @@
 // 2010-06-26
 
 var make_parse = function () {
-    var scope;              // current scope
+    var scope;
     var symbol_table = {};
     var token;
     var tokens;
@@ -24,12 +24,10 @@ var make_parse = function () {
             }
             this.def[n.value] = n;
             n.reserved = false;
-            n.nud      = itself; //A nud method is used by values and by prefix operators. 
-                                 //A nud does not care about the tokens to the left.
+            n.nud      = itself;
             n.led      = null;
-            n.std      = null;  //callback parsing the kind of statement. Used at the beginning of the staement
-
-            n.lbp      = 0;    // binding power = precedence level
+            n.std      = null;
+            n.lbp      = 0;
             n.scope    = scope;
             return n;
         },
@@ -168,17 +166,17 @@ var make_parse = function () {
         }
     };
 
-    var symbol = function (id, bp) { // bp = binding power
+    var symbol = function (id, bp) {
         var s = symbol_table[id];
         bp = bp || 0;
         if (s) {
-            if (bp >= s.lbp) {    // update left binding power
-                s.lbp = bp;       
+            if (bp >= s.lbp) {
+                s.lbp = bp;
             }
         } else {
             s = Object.create(original_symbol);
             s.id = s.value = id;
-            s.lbp = bp;           // lbp = left binding power
+            s.lbp = bp;
             symbol_table[id] = s;
         }
         return s;

@@ -1,0 +1,13 @@
+  
+<h1>Lexical Analysis</h1>
+<h2>Demonstration</h2>
+<textarea id="INPUT">
+   var a = "hello"; // initialize a
+   var b = (a <= 1)*5; /* initialize b  */
+</textarea>
+<br>
+<input id="PARSE" value=parse type=button>
+
+<input type="file" id="fichero"/>
+
+<pre id=OUTPUT></pre>
