@@ -5,7 +5,7 @@ $(document).ready(function() {
 	dropZone.addEventListener('drop', handleFileSelect, false);
 });
 
-Object.prototype.error = function (message, t) {
+Object.constructor.error = function (message, t) {
     t = t || this;
     t.name = "SyntaxError";
     t.message = message;
@@ -28,7 +28,6 @@ function  dump_ajax(fileName) {
 });
 }
 
-
 function loadTextArea(evt){
     var file;
 	if(evt.type != "drop")
@@ -50,6 +49,11 @@ function loadTextArea(evt){
 }
 
 function main() {
+
+	if (window.localStorage){
+		localStorage.INPUT = INPUT.value;
+	}
+					
     var parse = make_parse();
 
 
