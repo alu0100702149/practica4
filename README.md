@@ -27,7 +27,7 @@ Enlace a la página de pruebas
 
 Tutorial de "Top Down Operator Precedence" (Douglas Crockford)
 
-- Pruebas: <href a= http://javascript.crockford.com/tdop/tdop.html> http://javascript.crockford.com/tdop/tdop.html </href>
+- TDOP: <href a= http://javascript.crockford.com/tdop/tdop.html> http://javascript.crockford.com/tdop/tdop.html </href>
 
 ## ARCHIVOS ##
 
