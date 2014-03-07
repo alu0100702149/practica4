@@ -5,13 +5,29 @@ $(document).ready(function() {
 	dropZone.addEventListener('drop', handleFileSelect, false);
 });
 
-
 Object.prototype.error = function (message, t) {
     t = t || this;
     t.name = "SyntaxError";
     t.message = message;
     throw t;
 };
+
+function dump_get(fileName) {
+  $.get(fileName, function (data) {
+	  $("#INPUT").val(data);
+  });
+}
+
+function  dump_ajax(fileName) {
+  $.ajax({
+	url : fileName,
+	dataType: "text",
+	success : function (data) {
+		$("#INPUT").val(data);
+	}
+});
+}
+
 
 function loadTextArea(evt){
     var file;

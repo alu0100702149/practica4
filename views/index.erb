@@ -1,13 +1,17 @@
 
 <h1>Top Down Operator Precedence. Lexical Analysis</h1>
 
-<div id="buttons"><a href="https://github.com/alu0100702149/practica4" class="button">GITHUB</a> <a href="/tests" class="button">TESTS</a></div>
-<h2>Demonstration</h2>
+<div id="buttons"><a href="https://github.com/alu0100702149/practica4" class="button">GITHUB</a><a href="http://javascript.crockford.com/tdop/tdop.html" class="button">TOP DOWN TUTORIAL</a><a href="/tests" class="button">TESTS</a></div>
+
 <div id="drop_zone">Drop a file here</div>
 <br/>
-
-<h2>...or select it for parsing</h2>
-<input type="file" id="fileinput" /><br/>
+<div id="demo">
+Add an example file using 
+<button id="ajax" class="button2" type="button" onclick="dump_ajax('input2.js');">AJAX</button>
+<button id="get" class="button2" type="button" onclick="dump_get('input3.js');">GET</button>
+</div>
+<h2>...or select one file from your PC for parsing</h2>
+<input type="file" id="fileinput" /><br/><br/>
 <textarea id="INPUT"></textarea>
 <input id="PARSE" value="PARSE" type=button class="button"><br/>
 <pre id=OUTPUT></pre>

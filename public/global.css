@@ -79,8 +79,39 @@ img{
 	border-radius: 15px;
 }
 
+#demo{
+	font-weight:bold;
+	font-size:24px;
+	margin-bottom:15px;
+	color:#7b7878;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+.button2{
+	font-weight:bold;
+	font-size:24px;
+	margin-bottom:15px;
+	color:#7b7878;
+	margin-top:5px;
+	border:none;
+	padding:5px;
+	background-color:#f0db4f;
+	color:#333333;
+}
+.button2:hover{
+	background-color:#333333;
+	color:#f0db4f;
+}
+span{
+	font-weight:bold;
+	font-size:24px;
+	margin-bottom:15px;
+	color:#7b7878;
+	margin-top:5px;
+}
 #OUTPUT{
-overflow:scroll;
+	overflow:scroll;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -128,7 +159,9 @@ body
 	font-weight:bold;
 	font-style:normal;
 	line-height:35px;
-	width:87px;
+	width:auto;
+	padding:5px;
+	margin-left:5px;
 	text-decoration:none;
 	text-align:center;
 	border-style:solid;
