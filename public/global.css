@@ -1,25 +1,150 @@
 html *
 {
-    th {background-color: thistle; border: black solid 1px; text-align: left;
-        padding-left: 10px; padding-right: 10px; vertical-align: top;}
-    td {background-color: white; border: black solid 1pt; padding-left: 10px;
-        padding-right: 10px; vertical-align: top;}
-    table {width: 90%; border: 0px; cellpadding: 0px;}
+   font-size: large; 
+   /* The !important ensures that nothing can override what you've set in this style (unless it is also important). */
+   font-family: Arial;
 }
-#INPUT 
+
+  
+ #drop_zone{
+	width:924px;
+    background-color: #CEE765;
+	font-weight:bold;
+	font-size:15px;
+    color: #7b7878;
+    padding: 40px 50px;
+    text-align: center;
+	border-radius: 15px;
+	border-style:dotted;
+	border-width:4px;
+	border-color:#B0AEAE;
+}
+header{
+	height:180px;
+	text-align:center;
+}
+h1 {
+	text-align:center;
+	font-weight:bold;
+	font-size:28px;
+	margin-bottom:15px;
+	color:#7b7878;
+}
+
+h2 {
+	font-weight:bold;
+	font-size:24px;
+	margin-bottom:15px;
+	color:#7b7878;
+	margin-top:5px;
+}
+
+h3 {
+	font-weight:bold;
+	font-size:18px;
+	color:#333333;
+	text-align:center;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+#INPUT{
+width:100%;
+height:250px;
+}
+
+
+img{
+	height:100%; 
+	width:auto;
+}
+.input{
+	padding: 25px;
+	border-style: none;
+	background-color: #FFFFFF;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	height:100%;
+}
+.output{
+	padding: 25px;
+	border-style: none;
+	background-color: #BDBDBD;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#OUTPUT{
+overflow:scroll;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #000000;
+	background-color: #F2F2F2; 
+	vertical-align: top;
+	padding:20px;
+	text-align: left;
+}
+
+
+input        { text-align: right;  border: none;       }     /* Align input to the right  */
+                    
+
+.hidden      { display: none; }
+.unhidden    { display: block; }
+
+
+body
 {
-    border: none; 
-    color: black;
-    font-family: monospace;
-    height: 1in;
-    overflow: auto;
-    /* padding: 0.5em; */
-    width: 80%;
-    background-color: #66FFCC; 
+ color: #ffffff;
+ background-color:#d4d4d4;
+ text-align:center;
 }
-body { background-color: #99FFFF; }
-#OUTPUT 
-{
-    background-color: #66FFCC; 
-    width: 80%;
+
+.button {
+	background-color: #A3D84A;
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+	text-indent:0px;
+	display:inline-block;
+	color:#f9f9f9;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:35px;
+	line-height:35px;
+	width:87px;
+	text-decoration:none;
+	text-align:center;
+	border-style:solid;
+	border-width:3px;
+	border-color:#6AB12E;
+}.button:hover {
+	background-color:#CEE765;
+	color:#333333;
+		border-color:#A3D84A;
+}.button:active {
+	position:relative;
+	top:1px;
 }
+#buttons{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
