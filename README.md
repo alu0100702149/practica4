@@ -43,8 +43,9 @@ Tutorial de "Top Down Operator Precedence" (Douglas Crockford)
 
 <li>parse.js Contiene el parseador para un lenguaje simplificado de Javascript</li>
 
+<li>tokens.js Añalizador lexico que produce un array de tokens desde un string</li>
 
 </ul>
 
-* tokens.js Añalizador lexico que produce un array de tokens desde un string
+
            
