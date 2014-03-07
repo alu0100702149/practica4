@@ -3,6 +3,13 @@
 
 ![alt tag](https://raw.github.com/alu0100702149/practica4/gh-pages/public/logo.png)
 
+<table cellspacing="0">
+    <tr style="background-color: #FFFFFF;">
+    <td> <b>Participantes</b> </td>
+    <td>Boris Ballester Hernández</td>
+    <td>Guillermo Rivero Rodríguez</td>
+  </tr>
+</table>
 
 ## HEROKU ##
 
@@ -21,15 +28,6 @@ Enlace a la página de pruebas
 Tutorial de "Top Down Operator Precedence" (Douglas Crockford)
 
 - Pruebas: <href a= http://javascript.crockford.com/tdop/tdop.html> http://javascript.crockford.com/tdop/tdop.html </href>
-
-
-<table cellspacing="0">
-    <tr style="background-color: #FFFFFF;">
-    <td> <b>Participantes</b> </td>
-    <td>Boris Ballester Hernández</td>
-    <td>Guillermo Rivero Rodríguez</td>
-  </tr>
-</table>
 
 ## ARCHIVOS ##
 
