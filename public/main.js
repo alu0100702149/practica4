@@ -12,9 +12,10 @@ Object.prototype.error = function (message, t) {
     throw t;
 };
 
+/*
 function dump_get(fileName) {
   $.get(fileName, function (data) {
-	  $("#INPUT").val(data);
+	  INPUT.value = data;
   });
 }
 
@@ -23,10 +24,10 @@ function  dump_ajax(fileName) {
 	url : fileName,
 	dataType: "text",
 	success : function (data) {
-		$("#INPUT").val(data);
+		INPUT.value = data;
 	}
 });
-}
+}*/
 
 function loadTextArea(evt){
     var file;
