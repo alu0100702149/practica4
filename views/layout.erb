@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>JS Parser</title>
 	<link href="global.css" rel="stylesheet" type="text/css">
-
+	<link rel="stylesheet" href="tests/mocha.css" />
 	<link rel="shortcut icon" href="etsiiull.png" type="image/x-icon">
 
 	<script src="parse.js"></script>
@@ -16,6 +16,13 @@
 
   </head>
   <body>
-		<%= yield %>
+	<div id="wrapper">
+		<header>
+            <img src="logo.png" alt="JS Parser">
+        </header>
+		<section>
+			<%= yield %>
+		</section>		
+	</div>
   </body>
 </html>

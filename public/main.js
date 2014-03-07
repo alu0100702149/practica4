@@ -3,7 +3,6 @@ $(document).ready(function() {
  	var dropZone = document.getElementById('drop_zone');
 	dropZone.addEventListener('dragover', handleDragOver, false);
 	dropZone.addEventListener('drop', handleFileSelect, false);
-	document.getElementById('INPUT').innerHTML = "var a = \"hello\"; // initialize a\nvar b = (a <= 1)*5; /* initialize b  */"
 });
 
 
@@ -24,8 +23,11 @@ function loadTextArea(evt){
 	if (file) {
 			var reader = new FileReader();
 			reader.onload = function(e) { 
-					  INPUT.innerHTML = e.target.result;
+          			INPUT.value = e.target.result;
+					if (window.localStorage){
+						localStorage.INPUT = INPUT.value;
 					}
+			}
 			var c = reader.readAsText(file);
 		}
 	else { alert("Failed to load file"); }
@@ -48,6 +50,8 @@ function main() {
                 'value', 'arity', 'first', 'second', 'third', 'fourth'], 4);
     }
     OUTPUT.innerHTML = string.replace(/&/g, '&amp;').replace(/[<]/g, '&lt;');
+	if (window.localStorage) 
+		localStorage.OUTPUT = OUTPUT.innerHTML;
 };
 
 function handleFileSelect(evt) {
@@ -71,5 +75,14 @@ function handleDragOver(evt) {
 
 window.onload = function() {
   PARSE.onclick = main;
+   if (window.localStorage && localStorage.OUTPUT) {
+    document.getElementById("OUTPUT").innerHTML = localStorage.OUTPUT;
+  }
+  
+  if (window.localStorage && localStorage.INPUT) {
+    document.getElementById("INPUT").innerHTML = localStorage.INPUT;
+  }else{
+	document.getElementById('INPUT').innerHTML = "var a = \"hello\"; // initialize a\nvar b = (a <= 1)*5; /* initialize b  */"
+  }
 }
 
