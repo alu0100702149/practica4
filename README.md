@@ -1,4 +1,4 @@
-# Práctica 04 - Procesadores de Lenguajes - Analizador Léxico#
+# Práctica 04 - JavaScript Parser#
 
 ## HEROKU ##
 
@@ -14,11 +14,8 @@ Enlace a la página de pruebas
 
 
 <table cellspacing="0">
-  <tr  style="background-color: #E3E3E3;">
-
+    <tr style="background-color: #FFFFFF;">
     <td> <b>Nombre</b> </td>
-  </tr>
-  <tr style="background-color: #FFFFFF;">
     <td>Boris Ballester Hernández</td>
     <td>Guillermo Rivero Rodríguez</td>
   </tr>
