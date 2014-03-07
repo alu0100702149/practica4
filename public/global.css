@@ -103,13 +103,7 @@ img{
 	background-color:#333333;
 	color:#f0db4f;
 }
-span{
-	font-weight:bold;
-	font-size:24px;
-	margin-bottom:15px;
-	color:#7b7878;
-	margin-top:5px;
-}
+
 #OUTPUT{
 	overflow:scroll;
 	-webkit-border-radius: 15px;
