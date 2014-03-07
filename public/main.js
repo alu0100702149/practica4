@@ -5,7 +5,7 @@ $(document).ready(function() {
 	dropZone.addEventListener('drop', handleFileSelect, false);
 });
 
-Object.constructor.error = function (message, t) {
+Object.prototype.error = function (message, t) {
     t = t || this;
     t.name = "SyntaxError";
     t.message = message;
